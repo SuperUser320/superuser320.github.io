@@ -4,9 +4,10 @@ $(document).ready(function () {
     /* Fade intro variables */
     var divs = $('#intro'), limit = $(window).height() / 2;
 
-    /* Fade in variables */
-
-
+    /* On-load fade-in */
+    $('#intro .anim').css({'opacity': '1', 'transform': 'scale(1.0)'}, 750);
+    
+    /* On-scroll fade-in */
     $(window).on('scroll', function () {
         /* Fade intro */
         var scrollDist = $(this).scrollTop();

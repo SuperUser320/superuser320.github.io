@@ -7,7 +7,7 @@
 ***************************************/
 
 @import "normalize";
-/*@import "fonts";*/
+@import "fonts";
 
 /**************************************
        SCSS Variable Declarations
@@ -40,6 +40,15 @@ body {
 
 .float:after {
     clear: both;
+}
+
+strong {
+    font-family: $body-font-strong;
+}
+
+bold {
+    color: $accent-color;
+    font-family: $body-font-strong;
 }
 
 /**************************************

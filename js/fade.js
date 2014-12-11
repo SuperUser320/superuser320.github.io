@@ -1,8 +1,8 @@
 $(document).ready(function () {
     'use strict';
 
-    /* Fade intro variables */
-    var divs = $('#intro'), limit = $(window).height() / 2;
+    /* Global variables */
+    var divs = $('#intro'), limit = $(window).height() / 2, window_height = $(document).height();
 
     /* On-load fade-in */
     $('#intro .anim').css({'opacity': '1', 'transform': 'scale(1.0)'}, 750);
@@ -10,16 +10,15 @@ $(document).ready(function () {
     /* On-scroll fade-in */
     $(window).on('scroll', function () {
         /* Fade intro */
-        var scrollDist = $(this).scrollTop();
+        var scroll_dist = $(this).scrollTop();
 
-        if (scrollDist <= limit * 2) {
-            divs.css({'opacity': (1 - scrollDist / limit)});
+        if (scroll_dist <= limit * 2) {
+            divs.css({'opacity': (1 - scroll_dist / limit)});
         }
         
-        /* Fade in elements*/
         $('.fadein').each(function (i) {
-            var bottom_of_object = $(this).position().top + $(this).outerHeight() / 2, bottom_of_window = $(window).scrollTop();
-            if (bottom_of_window > bottom_of_object) {
+            var bottom_of_object = $(this).position().top + $(this).parent().position().top + $(this).outerHeight() / 2;
+            if (scroll_dist  + $(window).height() > bottom_of_object) {
                 $(this).css({'opacity': '1', 'transform': 'scale(1.0)'}, 750);
             }
         });

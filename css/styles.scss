@@ -42,55 +42,26 @@ body {
     clear: both;
 }
 
-strong {
+strong, bold {
     font-family: $body-font-strong;
 }
 
-bold {
+#scroll-cover {
+    position: absolute;
+    opacity: 0;
     color: $accent-color;
-    font-family: $body-font-strong;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
 }
 
 /**************************************
 			   HEADER
 ***************************************/
 
-#header {
-    position: absolute;
-    z-index: 1;
-    width: 100vw;
-    
-    #title {
-        position: relative;
-
-        font-size: 75px;
-        font-weight: 300;
-        font-family: $title-font;
-        text-transform: uppercase;
-        letter-spacing: 10px;
-        color: $secondary-color;
-
-        text-shadow: 0 10px 0 #333;
-        strong {
-            font-weight: 300;
-        }
-    }
-
-    #connect {
-        position: relative;
-    }
-}
-
-#portrait {
-    position: absolute;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: 60% 50%;
-    height: 100vh;
-    width: 100vw;
-    background-image: url("/res/img/portrait.png");
-
-}
 
 /**************************************
 			   HEADER
@@ -125,6 +96,10 @@ bold {
     font-size: $title-size;
     font-family: $title-font;
     
+    bold {
+        color: $accent-color;
+    }
+    
     line-height: 0px;
     text-align: center;
     padding: 50vh 0;
@@ -135,8 +110,8 @@ bold {
         transition: .8s;
     }
 }
-
-.block {
+    
+#block1 {
     position: relative;
     
     font-size: $body-size;
@@ -144,22 +119,38 @@ bold {
     
     padding: 100px;
     
-    strong {
-        font-family: $body-font-strong;
-    }
-    
-    .fadein {
-        max-width:  1000px;
-        margin:     auto;
-        
-        /* animation properties */
-        opacity:    0;
-        transform: scale(0.95);
-        transition: .8s;
+    bold {
+        color: $accent-color;
     }
     
     background-color: $primary-color;
     color: $secondary-color;
+}
+
+#block2 {
+    position: relative;
+    
+    font-size: $body-size;
+    font-family: $body-font;
+    
+    padding: 100px;
+    
+    bold {
+        color: $secondary-color;
+    }
+    
+    background-color: $accent-color;
+    color: $primary-color;
+}
+
+.fadein {
+    max-width:  1000px;
+    margin:     auto;
+
+    /* animation properties */
+    opacity:    0;
+    transform: scale(0.95);
+    transition: .8s;
 }
 
 /**************************************

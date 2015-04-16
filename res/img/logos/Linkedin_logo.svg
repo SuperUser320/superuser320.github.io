@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="245px" height="216px" viewBox="0 0 245 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.1 (9977) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0,0 L244.001,0 L244.001,215.94 L0,215.94"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Linkedin_logo" sketch:type="MSLayerGroup">
+            <g id="Page-1">
+                <g id="LinkedIn-InBug-2CRev">
+                    <g id="Group-3">
+                        <g id="mask-2" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                            <path d="M0,0 L244.001,0 L244.001,215.94 L0,215.94" id="path-1"></path>
+                        </g>
+                        <g id="Clip-2"></g>
+                        <g id="Fill-1-Clipped">
+                            <mask id="mask-2" sketch:name="path-1" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="path-1"></g>
+                            <path d="M200.001,0 L15.944,0 C7.145,0 0,6.977 0,15.563 L0,200.414 C0,209.016 7.145,216 15.944,216 L200.001,216 C208.81,216 216,209.016 216,200.414 L216,15.563 C216,6.977 208.81,0 200.001,0" id="Fill-1" fill="#0071A1" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                    <path d="M48.037,29.738 C58.279,29.738 66.604,38.063 66.604,48.309 C66.604,58.566 58.279,66.891 48.037,66.891 C37.768,66.891 29.467,58.566 29.467,48.309 C29.467,38.063 37.768,29.738 48.037,29.738 L48.037,29.738 L48.037,29.738 Z M32.01,80.984 L64.061,80.984 L64.061,184.063 L32.01,184.063 L32.01,80.984 L32.01,80.984 Z" id="Fill-4" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                    <path d="M84.154,80.984 L114.889,80.984 L114.889,95.063 L115.326,95.063 C119.604,86.961 130.057,78.414 145.643,78.414 C178.061,78.414 184.049,99.758 184.049,127.523 L184.049,184.063 L152.049,184.063 L152.049,133.938 C152.049,121.977 151.814,106.602 135.396,106.602 C118.725,106.602 116.182,119.625 116.182,133.07 L116.182,184.063 L84.154,184.063 L84.154,80.984" id="Fill-5" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+                    <path d="M222.923,174.469 L226.001,174.469 L226.001,184.063 L227.673,184.063 L227.673,174.469 L230.743,174.469 L230.743,172.797 L222.923,172.797 L222.923,174.469" id="Fill-6" fill="#000000" sketch:type="MSShapeGroup"></path>
+                    <path d="M241.618,172.797 L238.333,181.063 L235.052,172.797 L232.669,172.797 L232.669,184.063 L234.333,184.063 L234.333,175.492 L237.778,184.063 L238.892,184.063 L242.337,175.492 L242.337,184.063 L244.001,184.063 L244.001,172.797 L241.618,172.797" id="Fill-7" fill="#000000" sketch:type="MSShapeGroup"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

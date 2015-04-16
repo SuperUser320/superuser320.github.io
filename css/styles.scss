@@ -24,6 +24,10 @@ $body-font:             "Slim-Joe", sans-serif;
 
 $title-size:            100px;
 $body-size:             75px;
+
+$header-size:           35px;
+$body-description-size: 15px;
+
 $footer-size:           25px; 
 
 /**************************************
@@ -64,18 +68,37 @@ strong, bold {
 
 
 /**************************************
-			   HEADER
+			   FOOTER
 ***************************************/
+
+#contact {
+    color: $secondary-color;
+    background-color: $accent-color;
+    padding: 25px;
+    text-align: center;
+    font-size: $footer-size;
+    font-family: $body-font-strong;
+
+    img {
+        display: inline-block;
+        max-height: 100px;
+    }
+}
 
 #footer {
     #note {
-        color: $primary-color;
+        color: $secondary-color;
+        background-color: $primary-color;
         padding: 25px;
         text-align: center;
         font-size: $footer-size;
         font-family: $body-font-strong;
+        
+        em {
+            font-size: $body-description-size;
+            font-family: $body-font;
+        }
     }
-    
 }
 
 /**************************************
@@ -123,6 +146,10 @@ strong, bold {
         color: $accent-color;
     }
     
+    .fadein {
+        max-width:  1000px;
+    }
+    
     background-color: $primary-color;
     color: $secondary-color;
 }
@@ -139,18 +166,68 @@ strong, bold {
         color: $secondary-color;
     }
     
+    .fadein {
+        max-width:  1000px;
+    }
+    
     background-color: $accent-color;
     color: $primary-color;
 }
 
-.fadein {
-    max-width:  1000px;
-    margin:     auto;
+#block3 {
+    margin: 0 auto;
+    position: relative;
+    padding: 100px;
+    font-size: $body-size;
+    
+    header {
+        font-size: $body-size;
+        font-family: $title-font;
+    }
+    
+    p {
+        font-size: $body-description-size;
+        font-family: $title-font;
+    }
+    
+    header {
+        font-size: $header-size;
+    }
+    
+    background-color: $secondary-color;
+    color: $primary-color;
+}
 
+.fadein {
+    max-width: 1000px;
+    margin:     auto;
+    
     /* animation properties */
     opacity:    0;
     transform: scale(0.95);
     transition: .8s;
+}
+
+.col {
+    display: inline-block;
+    text-align: center;
+    max-width: 400px;
+}
+
+.col-box {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 1000px;
+    
+    img {
+        height: 200px;
+    }
+}
+
+.col-box:after {
+    display:inline-block;
+    width:100%;
+    content:'';
 }
 
 /**************************************

@@ -17,7 +17,7 @@ $(document).ready(function () {
         }
         
         $('.fadein').each(function (i) {
-            var bottom_of_object = $(this).position().top + $(this).parent().position().top + $(this).outerHeight() / 2;
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             if (scroll_dist  + $(window).height() > bottom_of_object) {
                 $(this).css({'opacity': '1', 'transform': 'scale(1.0)'}, 750);
             }

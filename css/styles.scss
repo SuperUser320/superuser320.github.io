@@ -130,6 +130,7 @@ strong, bold {
     .anim {
         opacity:    0;
         transform: scale(0.95);
+        -webkit-transform: scale(0.95);
         transition: .8s;
     }
 }
@@ -205,6 +206,7 @@ strong, bold {
     /* animation properties */
     opacity:    0;
     transform: scale(0.95);
+    -webkit-transform: scale(0.95);
     transition: .8s;
 }
 
@@ -228,16 +230,4 @@ strong, bold {
     display:inline-block;
     width:100%;
     content:'';
-}
-
-/**************************************
-		      ANIMATION
-***************************************/
-    
-/* Define fade-in*/
-@keyframes fade-in {
-   0%   { transform: scale(0.3);
-          opacity: 0; } 
-   100% { transform: scale(1);
-          opacity: 1; }
 }

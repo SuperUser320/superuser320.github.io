@@ -50,6 +50,8 @@ $mobile-light:              100;
 /* Page Dimensions */
 $max-text-width:            900px;
 
+$mobile-threshold:          1080px;
+
 /**************************************
 			   MIXINS
 ***************************************/
@@ -79,7 +81,7 @@ h1 {
     color: $body-font-color;
     padding-bottom: 30px;
     
-    @media (max-width: 900px) {
+    @media (max-width: $mobile-threshold) {
         font-size: $header-size-mobile;
         text-align: center;
         
@@ -98,7 +100,7 @@ p {
     font-weight: $normal;
     margin: 0 0 30px 0;
     
-    @media (max-width: 900px) {
+    @media (max-width: $mobile-threshold) {
         font-size: $mobile;
         padding: 0 20px;
         font-weight: $mobile-normal;
@@ -112,7 +114,7 @@ a {
     color: $accent-color;
     cursor: pointer;
     
-    @media (max-width: 900px) {
+    @media (max-width: $mobile-threshold) {
         font-weight: $bold;
     }
 }
@@ -126,7 +128,7 @@ a {
 }
 
 strong, bold {
-    @media (max-width: 900px) {
+    @media (max-width: $mobile-threshold) {
         font-weight: $mobile-bold;
     }
 }
@@ -170,7 +172,7 @@ strong, bold {
             height: 30px;
         }
         
-        @media (max-width: 900px) {
+        @media (max-width: $mobile-threshold) {
             font-size: $footer-size-mobile;
             em {
                 font-size: $footer-size-small-mobile;
@@ -219,7 +221,7 @@ strong, bold {
         transition: .8s;
     }
     
-    @media (max-width: 900px) {
+    @media (max-width: $mobile-threshold) {
         font-size: $intro-size-mobile;
     }
 }

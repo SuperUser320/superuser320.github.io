@@ -7,6 +7,7 @@
 ***************************************/
 
 @import "normalize";
+@import "fonts";
 
 /**************************************
        SCSS Variable Declarations
@@ -39,6 +40,7 @@ $paragraph-size:            20px;
 $mobile:                    5vmin;
 
 /* Font Weights */
+$intro-bold:                900;
 $bold:                      700;
 $normal:                    400;
 $light:                     100;
@@ -209,7 +211,7 @@ strong, bold {
     }
     
     strong {
-        font-weight: 700;
+        font-weight: $intro-bold;
         font-family: $intro-font;
         color: $accent-color;
     }    

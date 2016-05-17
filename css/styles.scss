@@ -7,28 +7,57 @@
 ***************************************/
 
 @import "normalize";
-@import "fonts";
 
 /**************************************
        SCSS Variable Declarations
 ***************************************/
 
-$background-color:      #fff;
-$primary-color:         #333;
-$secondary-color:       #fff;
-$accent-color:          #4CE684;
+/* Colors */
+$background-color:          #FFF;
+$accent-color:              #5C25FF;
+$body-font-color:           #000;
+$accent-hover:              #4b1fce;
 
-$title-font:            "Big-John", sans-serif;
-$body-font-strong:      "Big-John", sans-serif;
-$body-font:             "Slim-Joe", sans-serif;
+/* Fonts */
+$intro-font:                'Source Sans Pro', sans-serif;
+$body-font:                 'Source Sans Pro', sans-serif;
+$post-font:                 'Helvetica', sans-serif;
 
-$title-size:            100px;
-$body-size:             75px;
+/* Font Sizes */
+$intro-size:                115px;
+$header-size:               70px;
 
-$header-size:           35px;
-$body-description-size: 15px;
+$footer-size:               25px;
+$footer-size-small:         18px;
+$footer-size-mobile:        15px;
+$footer-size-small-mobile:  12px;
 
-$footer-size:           25px; 
+$paragraph-size:            20px;
+$mobile:                    5vmin;
+
+/* Font Weights */
+$bold:                      700;
+$normal:                    400;
+$light:                     100;
+
+$mobile-bold:               400;
+$mobile-normal:             100;
+$mobile-light:              100;
+
+/* Page Dimensions */
+$max-text-width:            900px;
+
+/**************************************
+			   MIXINS
+***************************************/
+
+@mixin fadein() {
+    /* animation properties */
+    opacity:    0;
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    transition: .8s;
+}
 
 /**************************************
 			   GENERIC
@@ -36,6 +65,53 @@ $footer-size:           25px;
 
 body {
     background-color: $background-color;
+    text-align: center;
+}
+
+h1 {
+    font-family: $body-font;
+    font-style: italic;
+    font-size: $header-size;
+    font-weight: $light;
+    color: $body-font-color;
+    padding-bottom: 30px;
+    
+    @media (max-width: 900px) {
+        font-size: 10vmin;
+        text-align: center;
+        
+        &:after {
+            margin: 10px 20%;
+            content: '';
+            display: block;
+            border: 0.5px solid #AAA;
+        }
+    }
+}
+
+p {
+    font-family: $body-font;
+    font-size: $paragraph-size;
+    font-weight: $normal;
+    margin: 0 0 30px 0;
+    
+    @media (max-width: 900px) {
+        font-size: $mobile;
+        padding: 0 20px;
+        font-weight: $mobile-normal;
+    }
+}
+
+a {
+    font-weight: $bold;
+    font-style: italic;
+    text-decoration: underline;
+    color: $accent-color;
+    cursor: pointer;
+    
+    @media (max-width: 900px) {
+        font-weight: $bold;
+    }
 }
 
 .float {
@@ -47,7 +123,9 @@ body {
 }
 
 strong, bold {
-    font-family: $body-font-strong;
+    @media (max-width: 900px) {
+        font-weight: $mobile-bold;
+    }
 }
 
 #scroll-cover {
@@ -71,41 +149,34 @@ strong, bold {
 			   FOOTER
 ***************************************/
 
-#contact {
-    color: $secondary-color;
-    background-color: $accent-color;
-    padding: 25px;
-    text-align: center;
-    font-size: $footer-size;
-    font-family: $body-font-strong;
-
-    img {
-        display: inline-block;
-        max-height: 100px;
-    }
-}
-
 #footer {
+    font-weight: 300;
+    
     #note {
-        color: $secondary-color;
-        background-color: $primary-color;
         padding: 25px;
         text-align: center;
         font-size: $footer-size;
-        font-family: $body-font-strong;
-        
+        font-family: $intro-font;
+
         em {
-            font-size: $body-description-size;
-            font-family: $body-font;
+            font-size: $footer-size-small;
+            font-family: $intro-font;
+        }
+        
+        #helmet {
+            height: 30px;
+        }
+        
+        @media (max-width: 900px) {
+            font-size: $footer-size-mobile;
+            em {
+                font-size: $footer-size-small-mobile;
+            }
+            #helmet {
+                height: 20px;
+            }
         }
     }
-}
-
-/**************************************
-			    BODY
-***************************************/
-
-#content {
 }
 
 /**************************************
@@ -115,119 +186,124 @@ strong, bold {
 #intro {
     position: relative;
     z-index: -10;
-    
-    font-size: $title-size;
-    font-family: $title-font;
-    
-    bold {
-        color: $accent-color;
-    }
-    
+    font-size: $intro-size;
+    font-family: $intro-font;
+    font-style: italic;
+    font-weight: $light;
     line-height: 0px;
     text-align: center;
     padding: 50vh 0;
     
+    #arrow-down {
+        position: absolute;
+        bottom: 5vh;
+        left: 50%;
+        font-style: normal;
+        font-size: 5vh;
+        color: #EEE;
+    }
+    
+    strong {
+        font-weight: 700;
+        font-family: $intro-font;
+        color: $accent-color;
+    }    
+    
     .anim {
-        opacity:    0;
+        opacity: 0;
         transform: scale(0.95);
         -webkit-transform: scale(0.95);
-        transition: .8s;
+        transition: .8s
     }
-}
-    
-#block1 {
-    position: relative;
-    
-    font-size: $body-size;
-    font-family: $body-font;
-    
-    padding: 100px;
-    
-    bold {
-        color: $accent-color;
-    }
-    
-    .fadein {
-        max-width:  1000px;
-    }
-    
-    background-color: $primary-color;
-    color: $secondary-color;
 }
 
-#block2 {
-    position: relative;
+#about {
+    max-width: $max-text-width;
+    text-align: left;
+    padding: auto;
+    margin: 100px auto 200px auto;
     
-    font-size: $body-size;
-    font-family: $body-font;
-    
-    padding: 100px;
-    
-    bold {
-        color: $secondary-color;
+    h1 {
+        margin: 0;
     }
     
-    .fadein {
-        max-width:  1000px;
+    #find-me {
+        text-align: center;
+
+        img {
+            height: 30px;
+            margin: 0 30px;
+        }
     }
-    
-    background-color: $accent-color;
-    color: $primary-color;
 }
 
-#block3 {
-    margin: 0 auto;
-    position: relative;
-    padding: 100px;
-    font-size: $body-size;
+#projects {
+    width: 100%;
+    text-align: left;
     
-    header {
-        font-size: $body-size;
-        font-family: $title-font;
+    h1 {
+        max-width: $max-text-width;
+        margin: auto;
     }
+}
+
+.project {
+    width: 80%;
+    text-align: center;
+    padding: 40px 0 40px 0;
+    
+    background-size: 80vw auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    h1 {
+        padding-bottom: 10px;
+    }
+}
+
+.project-info-container {
+    max-width: $max-text-width;
+    margin: 20px auto 80px auto;
+}
+
+.project-info {
+    text-align: left;
+    width: 30%;
+    background-color: #FFF;
+    padding: 0 30px 30px 30px;
+}
+
+/**************************************
+              PROJECTS
+***************************************/
+
+#muse {
+    width: 80vw;
+    margin: 30px auto;
+    
+    background-image: url("/res/img/projects/IMG_8352.jpg");
+
     
     p {
-        font-size: $body-description-size;
-        font-family: $title-font;
+        font-weight: $light;
     }
-    
-    header {
-        font-size: $header-size;
-    }
-    
-    background-color: $secondary-color;
-    color: $primary-color;
 }
+
+#aries {
+    width: 80vw;
+    margin: 30px auto;
+    
+    background-image: url("/res/img/projects/IMG_7253.jpg");
+    
+    p {
+        font-weight: $light;
+    }
+}
+
+/**************************************
+			   ANIMATIONS
+***************************************/
 
 .fadein {
-    max-width: 1000px;
-    margin:     auto;
-    
-    /* animation properties */
-    opacity:    0;
-    transform: scale(0.95);
-    -webkit-transform: scale(0.95);
-    transition: .8s;
-}
-
-.col {
-    display: inline-block;
-    text-align: center;
-    max-width: 400px;
-}
-
-.col-box {
-    text-align: justify;
-    margin: 0 auto;
-    max-width: 1000px;
-    
-    img {
-        height: 200px;
-    }
-}
-
-.col-box:after {
-    display:inline-block;
-    width:100%;
-    content:'';
+    @include fadein();
 }

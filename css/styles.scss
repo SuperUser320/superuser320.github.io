@@ -180,7 +180,7 @@ strong, bold {
                 font-size: $footer-size-small-mobile;
             }
             #helmet {
-                height: 40px;
+                height: 5vmin;
             }
         }
     }
@@ -244,7 +244,13 @@ strong, bold {
         img {
             height: 30px;
             margin: 10px 30px;
+            
+            @media (max-width: $mobile-threshold) {
+                height: 10vmin;
+                
+            }
         }
+        
     }
 }
 

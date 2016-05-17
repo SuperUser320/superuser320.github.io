@@ -180,7 +180,7 @@ strong, bold {
                 font-size: $footer-size-small-mobile;
             }
             #helmet {
-                height: 20px;
+                height: 40px;
             }
         }
     }
@@ -270,11 +270,18 @@ strong, bold {
     h1 {
         padding-bottom: 10px;
     }
+    
+    @media (max-width: $mobile-threshold) {
+        background-position: top;
+    }
 }
 
 .project-info-container {
     max-width: $max-text-width;
     margin: 20px auto 80px auto;
+    @media (max-width: $mobile-threshold) {
+        margin-top: 60vw;
+    }
 }
 
 .project-info {
@@ -282,6 +289,10 @@ strong, bold {
     width: 30%;
     background-color: #FFF;
     padding: 0 30px 30px 30px;
+    
+    @media (max-width: $mobile-threshold) {
+        width: 100%;
+    }
 }
 
 /**************************************

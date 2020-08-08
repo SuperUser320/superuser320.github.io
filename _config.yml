@@ -45,7 +45,8 @@ publons_id: # your ID on Publons
 research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
 
-contact_note: 
+contact_note: >
+  To see more of my works, check out the above links, or contact me via email.
 
 google_analytics: UA-59050539-1 # out your google-analytics code
 

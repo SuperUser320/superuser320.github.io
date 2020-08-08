@@ -1,5 +1,5 @@
 # al-folio (fork)
-The original al-folio project can be found at https://github.com/alshedivat/al-folio.
+The original **al-folio** project can be found at https://github.com/alshedivat/al-folio.
 
 ## License
 

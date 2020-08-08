@@ -9,6 +9,10 @@
   font-weight: 500;
 }
 
+a.navbar-brand, h1, h2 {
+  font-family: $title-font;
+}
+
 a, table.table a {
   color: $theme-color;
   &:hover {
@@ -52,7 +56,13 @@ a, table.table a {
 
 // Navbar customization
 
+.navbar-brand {
+  font-size:1.5rem;
+  font-weight: 500;
+}
+
 .navbar {
+  font-size:1.2rem;
   box-shadow: none;
   // border-bottom: 1px solid $grey-color-light;
   opacity: 0.95;
@@ -136,7 +146,7 @@ a, table.table a {
 .social {
   text-align: center;
   .contact-icon {
-    font-size: 4rem;
+    font-size: 3rem;
     a {
       color: $grey-color-dark;
       &:hover {
@@ -184,10 +194,10 @@ footer.sticky-bottom {
   text-align: left;
   // padding-top: 2rem;
   padding-bottom: 2rem;
-  // h1 {
-  //   color: $text-color;
-  //   font-size: 2.5rem;
-  // }
+  h1 {
+    color: $text-color;
+    font-size: 2.5rem;
+  }
 }
 
 .post-list {
@@ -255,6 +265,7 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
+  font-size: 1.0rem;
   margin-top: 2rem;
   h2.year {
     color: $grey-color-light;

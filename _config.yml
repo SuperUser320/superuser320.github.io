@@ -46,7 +46,7 @@ research_gate_profile: # your profile on ResearchGate
 blogger_url: # your blogger URL
 
 contact_note: >
-  To see more of my works, check out the above links, or contact me via email.
+  To contact me via email or to see more of my works, check out the links above.
 
 google_analytics: UA-59050539-1 # out your google-analytics code
 
@@ -54,7 +54,7 @@ google_analytics: UA-59050539-1 # out your google-analytics code
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Blog  # your blog must have a name for it to show up in the nav bar
+blog_name: blog  # your blog must have a name for it to show up in the nav bar
 blog_description: Currently under construction...
 permalink: /blog/:year/:title/
 

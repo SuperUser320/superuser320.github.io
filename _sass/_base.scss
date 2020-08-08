@@ -9,8 +9,9 @@
   font-weight: 500;
 }
 
-a.navbar-brand, h1, h2 {
+.navbar-brand, h1, h2 {
   font-family: $title-font;
+  font-weight: 500;
 }
 
 a, table.table a {
@@ -24,9 +25,6 @@ a, table.table a {
   }
 }
 
-p {
-  font-size: 1.075rem;
-}
 
 // Math
 
@@ -61,7 +59,7 @@ p {
 // Navbar customization
 
 .navbar-brand {
-  font-size:1.25rem;
+  font-size:1.5rem;
   font-weight: 700;
 }
 
@@ -141,12 +139,10 @@ p {
 // News
 
 .news table th {
-  font-size: 1.05rem;
   font-weight: 500
 }
 
 .news table td {
-  font-size: 1.05rem;
   font-weight: 300;
 }
 

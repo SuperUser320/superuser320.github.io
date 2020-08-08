@@ -13,10 +13,10 @@ layout: default
        {% assign middlenames = '' %}
     {% endif %}
     {% assign lastname = name | last %}
-    <a class="navbar-brand title" href="{{ site.baseurl | prepend: site.url }}/">
+    <div class="navbar-brand title">
      <!-- <span class="font-weight-bold">{{ firstname }}</span> {{ middlenames }}  {{ lastname }} -->
      {{ firstname }} {{ middlenames }}  {{ lastname }}
-    </a>
+   </div>
   </header>
 
   <article>

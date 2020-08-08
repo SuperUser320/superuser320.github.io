@@ -54,7 +54,7 @@ google_analytics: UA-59050539-1 # out your google-analytics code
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Jason's Blog  # your blog must have a name for it to show up in the nav bar
+blog_name: Blog  # your blog must have a name for it to show up in the nav bar
 blog_description: Currently under construction...
 permalink: /blog/:year/:title/
 

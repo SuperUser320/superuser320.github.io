@@ -20,4 +20,4 @@ I am a Ph.D. student in the Distributed Electromagnetic Theory and Application (
 
 Previously, I received a B.S. in Electrical Engineering at Michigan State University where I co-founded the Student Organized Autonomy Research group ([SOAR](https://canvas.msu.edu/soar)) with the aim of enabling undergraduate and graduate students to become involved in autonomy research.
 
-In addition to studying elecgromagnetics, I enjoy working on electrical projects and running.
+In addition to studying electromagnetics, I enjoy working on electrical projects and running.

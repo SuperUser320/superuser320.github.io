@@ -24,6 +24,10 @@ a, table.table a {
   }
 }
 
+p {
+  font-size: 1.075rem;
+}
+
 // Math
 
 .equation {
@@ -57,12 +61,12 @@ a, table.table a {
 // Navbar customization
 
 .navbar-brand {
-  font-size:1.5rem;
-  font-weight: 500;
+  font-size:1.25rem;
+  font-weight: 700;
 }
 
 .navbar {
-  font-size:1.2rem;
+  font-size:1.25rem;
   box-shadow: none;
   // border-bottom: 1px solid $grey-color-light;
   opacity: 0.95;
@@ -136,8 +140,14 @@ a, table.table a {
 
 // News
 
+.news table th {
+  font-size: 1.05rem;
+  font-weight: 500
+}
+
 .news table td {
-  font-size: 1rem;
+  font-size: 1.05rem;
+  font-weight: 300;
 }
 
 

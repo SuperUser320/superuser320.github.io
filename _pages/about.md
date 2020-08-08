@@ -16,4 +16,8 @@ news: true
 social: true
 ---
 
-I am a graduate research assistant in the distributed electromagnetic theory and applications (DELTA) group at Michigan State University with an interest in distributed radar, interferometric arrays, radar detection and tracking, and radar applied to robotics, aerospace, and automotive applications.
+I am a Ph.D. student in the Distributed Electromagnetic Theory and Application (DELTA) sub-group of the Electromagnetics Research Group ([EMRG](https://www.egr.msu.edu/emrg/)) at Michigan State University advised by [Prof. Jeffrey Nanzer](http://www.jeffreynanzer.org/).  My current research interestes include distributed interferometric arrays, radar detection and tracking, and radar applied to robotics applications.
+
+Previously, I received a B.S. in Electrical Engineering at Michigan State University where I co-founded the Student Organized Autonomy Research group ([SOAR](https://canvas.msu.edu/soar)) with the aim of enabling undergraduate and graduate students to become involved in autonomy research.
+
+In addition to studying elecgromagnetics, I enjoy working on electrical projects and running.

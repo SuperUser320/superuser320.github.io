@@ -3,7 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: Currently under construction...
-nav: true
+nav: false
 ---
 
 <div class="projects grid">

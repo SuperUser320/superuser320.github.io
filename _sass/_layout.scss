@@ -29,7 +29,8 @@
 }
 
 iframe {
-  width: $max-content-width;
+  max-width: $max-content-width;
+  width:94vw;
   height:78vh;
 }
 

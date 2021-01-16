@@ -4,6 +4,8 @@
 
 # Parse cmd arguments
 
+export LANG=en_US.UTF-8
+
 SRC_BRANCH="master"
 DEPLOY_BRANCH="gh-pages"
 
